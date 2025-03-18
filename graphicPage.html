@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Untitled 1</title>
+<script type="text/javascript">
+<!--
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+</head>
+
+<body onload="FP_preloadImgs(/*url*/'button61.jpg',/*url*/'button62.jpg')">
+
+<p><img alt="" height="539" src="Screenshot_10.png" width="898" /><img alt="" height="385" src="Screenshot_9.png" width="672" /><img alt="" height="355" src="Screenshot_8.png" width="636" /><img alt="" height="383" src="Screenshot_7.png" width="464" /><img alt="" height="621" src="Screenshot_6.png" width="828" /><img alt="" height="364" src="Screenshot_5.png" width="256" /><img alt="" height="188" src="Screenshot_4.png" width="348" /><img alt="" height="348" src="Screenshot_3.png" width="263" /><img alt="" height="727" src="Screenshot_2.png" width="526" /><img alt="" height="814" src="Screenshot_1.png" width="955" /></p>
+<p>&nbsp;</p>
+<a href="index.html" title="Go back to the first page!">
+<img id="img1" alt="Page 1" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'button62.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'button60.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'button61.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'button61.jpg')" src="button60.jpg" style="border: 0" width="100" /><!-- MSComment="ibutton" fp-style="fp-btn: Braided Row 1" fp-title="Page 1" --></a><p>
+&nbsp;</p>
+<p>
+<a href="https://www.youtube.com/watch?v=iNCDavknKus" target="_blank" title="Go and see it!!">
+SuperCoolVideo!</a><br />
+<a href="mailto:floryciurumelea1@yahoo.com?subject=Hello!!!!" title="Send me a good morning message!">
+Send me a cool mail B)</a></p>
+
+</body>
+
+</html>
